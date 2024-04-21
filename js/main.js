@@ -64,7 +64,11 @@ productValue.addEventListener("click", (e) => {
     price: price,
     name: name,
   };
-  prodData.push(newProduct);
+  if(quantity.length && unit.length && name.length && price.length && img.length){
+    prodData.push(newProduct);
+  } else {
+    alert("Formani to'ldir")
+  }
   localStorage.setItem(Products1, JSON.stringify(prodData));
 
   mapProduct(prodData);
