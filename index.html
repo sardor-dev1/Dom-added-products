@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.min.css">
+</head>
+<body>
+    
+    <main class="container">
+        <section class="products--head">
+            <h1>Products</h1>
+            <div class="products__btn-wrap">
+                <button class="products__add-cards">Add cards</button>
+            </div>
+        </section>
+        <section class="modal">
+            <h3 class="modal__title">Enter products information</h3>
+            <form action="" class="">
+                <input required type="text" id="name" placeholder="Name:">
+                <input required type="url" id="img" placeholder="enter img url">
+                <input required type="number" id="quantity" placeholder="Quantity:">
+                <select required id="products__unit">
+                    <label for="">select a measure</label>
+                    <option class="unit" value="dona">piece</option>
+                    <option class="unit" value="kg">kg</option>
+                    <option class="unit" value="liter">liter</option>
+                </select>
+                <input required type="text" id="price" placeholder="Price:">
+            </form>
+            <div class="modal__btns">
+                <button class="submit-btn">Submit</button>
+                <button class="modal__del--btn">Cancel</button>
+            </div>
+        </section>
+
+        <section class="products">
+            <div class="products__cards">
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
