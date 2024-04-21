@@ -74,6 +74,7 @@ productValue.addEventListener("click", (e) => {
 const deleteBtn = (id) => {
   let index = prodData.findIndex((u) => u.id === id);
   prodData.splice(index, 1);
+  localStorage.setItem(Products1, JSON.stringify(prodData));
   mapProduct(prodData);
 };
 
